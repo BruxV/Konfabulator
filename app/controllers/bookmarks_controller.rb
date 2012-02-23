@@ -3,6 +3,11 @@ class BookmarksController < ApplicationController
   end
 
   def display_bookmarks
+    @bookmarks = Bookmark.all
   end
+  
+#def index
+#     @bookmarks = Bookmark.all
+# end
 
 end

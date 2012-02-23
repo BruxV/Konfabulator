@@ -1,2 +1,18 @@
-<h1>Bookmarks#display_bookmarks</h1>
-<p>Find me in app/views/bookmarks/display_bookmarks.html.erb</p>
+<h1>Show all Bookmarks</h1>
+
+<table>
+    <th></th>
+    <tr>
+        <td>URL</td>
+        <td>Site Name</td>
+        <td>Date Saved</td>
+    </tr>
+    <th></th>
+    <% @bookmarks.each do |book| %>
+        <tr>
+            <td><%= bookmark.url %></td>
+            <td><%= bookmark.site_name %></td>
+            <td><%= bookmark.date_saved %></td>
+        </tr>
+    <% end %>
+</table>
