@@ -1,7 +1,11 @@
 Konfabulator::Application.routes.draw do
-  get "bookmarks/enter_bookmark"
-
-  get "bookmarks/display_bookmarks"
+  #get "bookmarks/enter_bookmark"
+  #get "bookmarks/display_bookmark"
+  
+  get "bookmarks/edit"
+  get "bookmarks/index"
+  get "bookmarks/new"
+  get "bookmarks/show"
   
   resources :bookmarks
 

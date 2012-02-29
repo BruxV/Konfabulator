@@ -1,5 +1,12 @@
-* {margin:0;padding:0}
-.clear { clear: both; height: 0; }
+* {
+    margin:0;
+    padding:0
+}
+
+.clear {
+     clear: both; 
+     height: 0; 
+}
 
 .wat-cf:after {
      content: "."; 
@@ -9,7 +16,9 @@
      visibility: hidden;
 }
 
-.wat-cf {display: inline-block;}
+.wat-cf {
+    display: inline-block;
+}
 
 /* Hides from IE-mac \*/
 * html .wat-cf {height: 1%;}

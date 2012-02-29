@@ -25,7 +25,8 @@
 
 body {
   color: #111111;
-  background: #c4c4c4 url("images/bgd.jpg");
+ /* background: #c4c4c4 url("images/bgd.jpg"); */
+  background: #d1d1d1 url("images/bgd.jpg");
   font-family: "MuseoSans500", helvetica, arial, sans-serif;
 }
 
