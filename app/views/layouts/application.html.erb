@@ -12,8 +12,11 @@
       <h1><a href="/">Konfabulator</a></h1>
       <div id="user-navigation">
         <ul class="wat-cf">
-          <li><a href="bookmarks.html"><%= t("web-app-theme.profile", :default => "Show all Bookmarks") %></a></li>
-          <li><a href="bookmarks/new.html"><%= t("web-app-theme.settings", :default => "Add a Bookmark") %></a></li>
+          <li><%= link_to 'Show all Bookmarks', "index" %></li>
+          <li><%= link_to "Add a New Bookmark", "new" %></li>
+          <li><!-- %= link_to 'New', edit_bookmark_path(@bookmark) % --></li>
+          <li><a href="bookmarks.html"><!-- %= t("web-app-theme.profile", :default => "Show all Bookmarks") % --></a></li>
+          <li><a href="bookmarks/new"><!-- %= t("web-app-theme.settings", :default => "Add a Bookmark") % --></a></li>
           <li><a href="/logout" class="logout"><!-- %= t("web-app-theme.logout", :default => "Logout") % --></a></li> 
         </ul>
       </div>

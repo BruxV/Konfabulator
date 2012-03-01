@@ -1,11 +1,12 @@
 Konfabulator::Application.routes.draw do
-  #get "bookmarks/enter_bookmark"
-  #get "bookmarks/display_bookmark"
+
+  match 'bookmarks/index', :to => 'bookmarks#index'
+  match 'bookmarks/mew', :to => 'bookmarks#new'
+  match 'bookmarks/edit', :to => 'bookmarks#edit'
+  #match '/index', :to  => 'bookmarks#index'
+  match 'bookmarks/show', :to => 'bookmarks#show'
   
-  get "bookmarks/edit"
-  get "bookmarks/index"
-  get "bookmarks/new"
-  get "bookmarks/show"
+  root :to => 'bookmarks#index'
   
   resources :bookmarks
 
